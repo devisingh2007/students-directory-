@@ -28,3 +28,13 @@ export interface Department {
   enrolledStudents: number;
 }
 
+export type Specialization = {
+  slug: string
+  name: string
+  departmentSlug: string
+  code: string
+  description: string
+  lead: string
+  lab: string
+  cycle: string
+}
