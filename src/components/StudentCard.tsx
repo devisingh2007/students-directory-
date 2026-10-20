@@ -1,6 +1,6 @@
 // components/StudentCard.tsx
 import Link from "next/link"
-import type { students } from "@/lib/data"
+import type { Student } from "@/types/allTypes"
 
 
 const avatarColors = [
@@ -18,7 +18,7 @@ function avatarColorFor(id: string) {
   return avatarColors[sum % avatarColors.length]
 }
 
-export default function StudentCard({ student }: { student: students }) {
+export default function StudentCard({ student }: { student: Student }) {
  
 
   return (
