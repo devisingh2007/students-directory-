@@ -12,7 +12,6 @@ const avatarColors = [
   "bg-amber-100 text-amber-900",
 ]
 
-// Same id par hamesha same color
 function avatarColorFor(id: string) {
   let sum = 0
   for (const ch of id) sum += ch.charCodeAt(0)
