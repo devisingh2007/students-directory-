@@ -9453,3 +9453,8 @@ export const specializations: Specialization[] = [
   },
 ];
 
+export function getSpecialization(departmentSlug: string, slug: string) {
+  return specializations.find(
+    (s) => s.departmentSlug === departmentSlug && s.slug === slug
+  )
+}
