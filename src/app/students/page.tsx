@@ -20,7 +20,7 @@ export default function Students() {
         return matchedDepartment && matchedSearch;
     });
 
-    const totalPages = Math.ceil(filteredData.length / limit);
+    
     const start = (currentpage - 1) * limit;
     const paginateddata = filteredData.slice(start, start + limit);
     const from = start + 1;
@@ -67,7 +67,7 @@ export default function Students() {
                 ) : (
                     <div className="student-grid">
                         {paginateddata.map((item) => (
-                            <StudentCard key={item.id} data={item} />
+                            <StudentCard key={item.id} student={item} />
                         ))}
                     </div>
                 )}
@@ -79,7 +79,7 @@ export default function Students() {
                 </p>
                 <div className="pagination">
                     <button onClick={() => setCurrentpage((p) => p - 1)} disabled={currentpage === 1}>Previous</button>
-                    <button onClick={() => setCurrentpage((p) => p + 1)} disabled={currentpage >= totalPages}>Next</button>
+                    <button onClick={() => setCurrentpage((p) => p + 1)} >Next</button>
                 </div>
             </footer>
         </main>
