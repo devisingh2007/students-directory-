@@ -9,7 +9,7 @@ import { departments } from "@/lib/data"
 export default function Department() {
     return (
         <main className="bg-[#f8f8fd] px-6 py-12">
-            <div className="mx-auto max-w-[52rem]">
+            <div className="mx-auto max-w-208">
                 <header className="flex items-start justify-between gap-4">
                     <div>
                         <h1 className="text-4xl font-bold tracking-tight text-slate-900">

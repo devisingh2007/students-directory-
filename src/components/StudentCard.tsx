@@ -1,4 +1,3 @@
-// components/StudentCard.tsx
 import Link from "next/link"
 import type { Student } from "@/types/allTypes"
 

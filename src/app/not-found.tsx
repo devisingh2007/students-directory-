@@ -1,4 +1,3 @@
-// app/not-found.tsx
 import Link from "next/link"
 
 
@@ -8,11 +7,11 @@ export default function NotFound() {
          
             <header className="border-b border-slate-300 bg-[#f8f8fd]">
                 <div className="mx-auto max-w-6xl px-6 py-3 text-sm">
-                    <Link href="/students" className="text-slate-500 hover:underline">
-                        Directory
+                    <Link href="/students" className="text-slate-500 ">
+                        Directory / 
                     </Link>
-                    <span className="mx-2 text-slate-400">/</span>
-                    <span className="font-medium text-slate-900">Not Found</span>
+                    
+                    <span className="font-medium text-slate-900"> Not Found</span>
                 </div>
             </header>
 
@@ -20,7 +19,7 @@ export default function NotFound() {
                
                 <div className="flex items-center gap-2 rounded border border-slate-300 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600">
                     <span className="h-2 w-2 rounded-full bg-slate-600" />
-                    <p>404 · Route not found</p>
+                    <p>404 . Route not found</p>
                 </div>
 
           
